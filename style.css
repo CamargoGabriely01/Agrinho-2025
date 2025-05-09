@@ -1,59 +1,71 @@
 /* Estilos gerais */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: linear-gradient(135deg, #e0f7fa, #ffe0b2);
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  background: linear-gradient(135deg, #ffe53b, #ff2525);
+  color: #fff;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* Cabeçalho com efeito */
+/* Cabeçalho com efeito de destaque */
 header {
-  background-color: rgba(76, 175, 80, 0.8);
-  color: #fff;
-  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 60px 20px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   position: relative;
+  overflow: hidden;
 }
 
 header h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 2.8em;
-  margin: 0;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  animation: pulse 2s infinite;
 }
 
 header p {
-  margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-weight: 600;
 }
 
-/* Seção de conexão */
-.conexao {
+/* Animação pulsante para o título */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Seção de celebração com fundo vibrante e efeito de destaque */
+section {
+  padding: 50px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  padding: 50px 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  margin: -20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  gap: 40px;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  border-radius: 20px;
+  margin: 50px auto;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
 }
 
-/* Cartões de campo e cidade */
+/* Cartões de conteúdo com efeito de profundidade */
 .card {
-  background-color: #fff;
+  background: #fff;
+  color: #333;
   border-radius: 20px;
   width: 300px;
   padding: 30px 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
@@ -62,45 +74,25 @@ header p {
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  transform: translateY(-15px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
-/* Imagens dentro dos cartões */
+/* Imagens dentro dos cartões com efeito de destaque */
 .card img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 20px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #4CAF50;
-  background-color: #fff;
+  border: 4px solid #ff6f61;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Títulos dos cartões */
-.card h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
-  margin-bottom: 15px;
-  color: #2e7d32;
+.card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Descrições */
-.card p {
-  font-size: 1em;
-  color: #555;
-}
-
-/* Seção de celebração */
-footer {
-  background-color: rgba(76, 175, 80, 0.8);
-  color: #fff;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 50px;
-  box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-footer
+/* Títulos dos cartões com fonte moderna e cores vibrantes */
