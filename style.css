@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #ffe53b, #ff2525);
+  background: linear-gradient(135deg, #3bff76, #048a04);
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
@@ -85,7 +85,7 @@ section {
   margin-bottom: 20px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #ff6f61;
+  border: 4px solid #61ff83;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
 }
