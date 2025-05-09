@@ -96,3 +96,52 @@ section {
 }
 
 /* Títulos dos cartões com fonte moderna e cores vibrantes */
+
+/* Gradiente animado de fundo para o corpo */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(-45deg, #ffe53b, #ff2525, #66a6ff, #89f7fe);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* Efeito de brilho sutil nos títulos do header */
+header h1 {
+  text-shadow: 0 0 10px rgba(255,255,255,0.8), 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Sombras internas nos cartões para profundidade adicional */
+.card {
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1), 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Efeito de fade-in suave ao carregar a página */
+body {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Ícones animados ou com efeito de pulsar (exemplo para ícones) */
+.icon {
+  display: inline-block;
+  font-size: 2em;
+  color: #fff;
+  animation: pulseIcon 2s infinite;
+}
+
+@keyframes pulseIcon {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
